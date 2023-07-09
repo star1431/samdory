@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.hidden {
+  font-size:0 !important;
+  color:transparent !important;
+  line-height:0 !important;
+  width:0 !important;
+  height:0 !important;
+  overflow:hidden !important;
+  position:absolute !important;
+  text-indent:-99999px !important;
+}
+.scroll-hidden-y{overflow-y: hidden;}
+.scroll-hidden-x{overflow-x: hidden;}
+
+/* 텍스트 옵션 */
+.title-main{font-size:120px; font-weight:700; line-height:100px; letter-spacing:-0.2px;}
+.title-main-sub {font-size:64px; font-weight:700; line-height:80px; letter-spacing:-0.2px;}
+.title-sub-main {font-size:34px; font-weight:700; line-height:46px; letter-spacing:-0.2px;}
+.title-sub-sub {font-size:24px; font-weight:700; line-height:36px; letter-spacing:-0.2px;}
+.text-medium {font-size:18px; font-weight:700; line-height:26px; letter-spacing:-0.2px;}
+.text-default {font-size:16px; font-weight:400; line-height:24px; letter-spacing:-0.2px;}
+.text-sub {font-size:14px; font-weight:400; line-height:20px; letter-spacing:-0.2px;}
+
+
+/* 기술내용 나열 */
+.tech-list li {position:relative; display:inline-flex;}
+.tech-list li + li {margin-left:11px;}
+.tech-list li + li::before {
+  content:''; display:block; width:3px; height:3px; background:#888; border-radius:50%;
+  position:absolute; top:11px; left:-8px;
+}
+.tech-list li > span {color:#888;}
+
+/* 이미지 후버 */
+.work-list > li .img-wrap a {position:relative; width:580px; height:375px; transition:all 0.3s ease; display:block;}
+.work-list > li.on .img-wrap a {box-shadow:24px 24px 40px rgba(0,0,0,0.24);}
+.work-list > li.on .img-wrap a::before {
+  content:''; display:block; width:100%; height:100%; border:8px solid #AFE958; box-sizing:border-box;
+  position:absolute; top:0; left:0;
+}
+
+/* 백그라운드 */
+.section-area.bg-black {
+  background:linear-gradient(rgba(255,255,255,16%) 1px, transparent 1px), #000;
+  background-size:183px 183px;
+}
+.section-area.bg-gray {
+  background:linear-gradient(rgba(34,34,34,10%) 1px, transparent 1px), url('@/assets/img/main/img_bg_work.png');
+  background-size:183px 183px;
+}
+
+
+@media (max-width:1280px) {
+  .title-main {
+    font-size:8.8vw;
+    line-height:7vw;
+  }
+}

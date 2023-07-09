@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+.card-box-image { display:block; position: relative; height: auto; transition:all 0.3s ease; }
+.card-box-image > img { position: absolute; width: 100%; top: 0; }
+.card-box a:hover .card-box-image, .card-box a:focus .card-box-image, .card-box a:active .card-box-image { box-shadow:24px 24px 40px rgba(0,0,0,0.24); }
+.card-box a:hover .card-box-image::before, .card-box a:focus .card-box-image::before, .card-box a:active .card-box-image::before { content:''; display:block; position:absolute; width:100%; height:100%; border:8px solid #AFE958; box-sizing:border-box; top: 0; left:0; z-index: 2; }
+.card-box-image::after { content: ''; display: block; width: 100%; padding-bottom: 64.7230%; z-index: 0; }
+.card-box-image + .card-box-title { padding-top: 40px; }
+.card-box-title > span { display: inline-block; font-size: 34px; line-height: 46px; letter-spacing: -0.68px; font-weight: bold; color: #222; }
+.card-box-title + .card-box-explanation { margin-top: 8px; }
+.card-box-explanation { display: flex; align-items: stretch; flex-direction: row; flex-wrap: wrap; }
+.card-box-explanation > li { display: flex; align-items: center; }
+.card-box-explanation > li + li::before { content: ''; display: block; margin: 0px 4px; width: 3px; height: 3px; border-radius: 10px; background-color: #888888; }
+.card-box-explanation li span { display: inline-block; font-size: 16px; font-weight: 300; line-height: 24px; letter-spacing: -0.32px; color: #888; }
+
+/* tablet */
+@media (max-width:1024px) {
+  .card-box-image + .card-box-title { padding-top: 16px; }
+  .card-box-title > span { font-size: 24px; line-height: 36px; letter-spacing: -.48px; }
+  .card-box-title + .card-box-explanation { margin-top: 4px; }
+  .card-box-explanation li span { font-size: 14px; line-height: 20px; letter-spacing: -.28px; }
+} 
+
+/* 
+  ipad
+  @media (max-width:767px) {
+  } 
+*/
+
+/* Mobile 
+  @media (max-width:375px) {
+*/
+@media (max-width:767px) {
+  .card-box-image { width: 100%; }
+  .card-box-image + .card-box-title { padding-top: 16px; }
+  .card-box-title > span { font-size: 24px; line-height: 36px; letter-spacing: -0.48px; }
+  .card-box-title + .card-box-explanation { margin-top: 4px; }
+  .card-box-explanation li span { font-size: 14px; line-height: 20px; letter-spacing: -0.28px; }
+}

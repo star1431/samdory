@@ -1,0 +1,3 @@
+@charset "UTF-8";
+.map.sample{position: relative; width: 100%; padding-bottom: 56.25%; background-color: white;}
+.map.sample img{position: absolute; width: 100%; height: 100%;}

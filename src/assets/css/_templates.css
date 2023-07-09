@@ -1,0 +1,20 @@
+@import '@/assets/css/templates/_skipNav.css'; /* 공통 : 상단 컨텐츠 영역으로 스킵하는 버튼입니다. */
+@import '@/assets/css/templates/_button.css'; /* button 모음입니다. */
+
+@import '@/assets/css/templates/_cardBox.css'; /* work : 프로젝트 리스트 내부 박스 */
+@import '@/assets/css/templates/_tabContent.css'; /* work : 컨텐츠 바로 아래 들어오는 탭 */
+@import '@/assets/css/templates/_list.css'; /* work : card_box를 감싸는 리스트 스타일 */
+@import '@/assets/css/templates/_contactBox.css'; /* CONTACT : 컨텐츠 내용박스 */
+
+
+/*
+  - 완성되지 않은 코드는 속성당 한줄식, 완료후 선택자 포함 한줄처리로 변경됩니다.
+  
+
+  TODOLIST
+  * 반응형 폰트 컨트롤 체크하기
+    - 위 체크후 폰트 적용부분 변경처리하기
+  * 템플릿 모음 만들어 두기
+    - 코드 정리해서 뒤 사람 사용하기 편하게 처리해두기 (가이드)
+  * 파비콘 확인하기 (콘솔에러)
+*/

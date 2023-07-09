@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+.contact-wrap { display: flex; position: relative; align-items: stretch; justify-content: space-between; flex-wrap: wrap; }
+.contact-info { padding-right: 40px; width: 50%; }
+.contact-info-header-text p { font-size: 18px; line-height: 26px; letter-spacing: -0.02em; color: white; font-weight: 500; }
+.contact-info-header-text + .contact-info-email { margin-top: 16px; }
+.contact-info-email a strong { display: block;}
+.contact-info-email a strong { display: inline-block; font-size: 34px; /* line-height: 46px; */ line-height: 1.35294em; font-weight: bold; letter-spacing: -0.02em; color: white;}
+.contact-info-email + .contact-info-list { margin-top: 32px; }
+.contact-info-list { margin-bottom: 60px; }
+.contact-info-list li { display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: row; }
+.contact-info-list li + li { margin-top: 16px; }
+.contact-info-list-item-title { display: inline-block; width: 44px; padding-right: 24px; font-size: 16px; line-height: 1.5em; letter-spacing: -.02em; color: #888; flex-shrink: 0; }
+.contact-info-list-item-text { display: inline-block; font-size: 16px; /* line-height: 24px; */ line-height: 1.5em; letter-spacing: -0.02em; color: white; font-weight: 300; }
+.contact-info-footer { position: absolute; bottom: 0px; }
+.contact-map { width: 50%; }
+
+/* tablet */
+@media (max-width:1024px) {
+  .contact-info-list-item-title { width: 40px; font-size: 14px; line-height: 20px; }
+  .contact-info-list-item-text { font-size: 14px; line-height: 20px; }
+  .contact-info-email a strong { font-size: 24px; line-height: 36px; }
+  .contact-info-list { margin-bottom: 0px; }
+  .contact-info-footer { position: inherit; flex: none; margin-top: 40px; }
+} 
+
+/* 
+  ipad
+  @media (max-width:767px) {
+  } 
+*/
+
+/* Mobile 
+  @media (max-width:375px) {
+*/
+@media (max-width:767px) {
+  .contact-wrap { display: block; }
+  .contact-info { width: 100%; padding: 0; }
+  .contact-info + .contact-map { margin-top: 40px; }
+  .contact-map { max-width: 460px; width: 100%; }
+  .contact-info-footer { margin-top: 24px; }
+}
