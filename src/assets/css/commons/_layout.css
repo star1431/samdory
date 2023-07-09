@@ -139,6 +139,8 @@
 @media (max-width:590px) {
   .header .menu-area .menu-layer .layer-inner{flex-direction:column;height:auto;}
   .header .menu-area .summary-wrap.type-menu-inner{width:100%;height:auto;margin:80px 0 40px;}
+  .menu-area .summary-wrap.type-menu-inner{transform: translate(-50%,0);}
+  .menu-area.active .summary-wrap.type-menu-inner{transform: translate(0);}
   .summary-wrap.type-menu-inner .summary-circle{position:relative;display:inline-flex;left:calc(50% - 200px);transform: translateY(0);}
   .summary-wrap.type-menu-inner .summary-circle-design{transform: translate(50%, 0);}
   .summary-wrap.type-menu-inner .summary-circle-design.second{transform: translate(100%, 0);}

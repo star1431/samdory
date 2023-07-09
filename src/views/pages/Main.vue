@@ -17,7 +17,7 @@
               <p>우리는 인터랙티브한 구현에<br/>끊임없이 연구하는<br/>웹퍼블리싱 UI스크립트 전문기업입니다.</p>
             </div>
           </div>
-          <div class="summary-circle" data-aos="zoom-in-down" data-aos-easing="ease-out-back" data-aos-delay="2500" data-aos-duration="1100">
+          <div class="summary-circle" data-aos="zoom-in-down" data-aos-easing="ease-out-back" data-aos-delay="2500" data-aos-duration="1100" data-aos-offset="0">
             <div class="summary-circle-button-wrap">
               <div class="summary-circle-button" @click="scrollToEv">
                 <p>COMPANY<br/>BROCHURE</p>
@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="banner-wrap" data-aos="zoom-out-up" data-aos-delay="400">
+        <div class="banner-wrap" data-aos="zoom-out-up" data-aos-delay="400" data-aos-offset="0">
           <swiper
             :slidesPerView="'auto'"
             :wrapperTag="'ul'"

@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHashHistory } from 'vue-router' // git page 용
 import { nextTick } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -15,7 +16,10 @@ const routes = [
 
 // VueRouter에 라우터값 넣기
 const router = createRouter({
-  history: createWebHistory('/samdory'),
+  history: createWebHistory(),
+  //git page 용
+  // history: createWebHashHistory ('/samdory/'),
+  // mode: 'hash',
   routes,
   // 스크롤기능
   async scrollBehavior(to, from, savedPosition) {

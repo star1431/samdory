@@ -264,6 +264,7 @@ export default {
     // swiper ref 할당
     getPopSlide (refs) {
       this.refPopSlide = refs
+      this.count =  refs.realIndex
       // 초기 클래스 결정 및 적용
       const _index = refs.realIndex
       const _currentType = this.filterLists[_index].type

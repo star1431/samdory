@@ -44,7 +44,7 @@
               <li>
                 <strong class="title-sub-sub">기술개발부</strong>
                 <p class="text-default">
-                  디자인팀 <br>마크업팀 <br>이넡렉션팀 <br>SI팀
+                  디자인팀 <br>마크업팀 <br>인터렉션팀 <br>SI팀
                 </p>
               </li>
               <li>

@@ -38,8 +38,8 @@
               <img src="@/assets/img/contact/img_office_map.png" alt="map">
             </div>
           </div>
-          <div class="contact-info-footer" data-aos="zoom-out-up" data-aos-delay="500">
-            <button class="text-button" @click="toMapUrl"><span>View Map</span></button>
+          <div class="contact-info-footer" data-aos="zoom-out-up" data-aos-delay="500" data-aos-offset="0">
+            <button class="text-button" @click="toMapUrl"><span v-html="mapLink"></span></button>
           </div>
         </div>
       </div>
@@ -64,7 +64,8 @@ export default {
     return{
       // this.AOS.refresh()가 undefined 라서 데이터바인딩으로 재랜더링하여 aos refresh 줌
       mailTo : 'mailto:sh1117.lee@gmail.com? subkect=회사홈페이지에서 보내는 메일입니다.',
-      mailAdr: 'sh1117.lee@gmail.com'
+      mailAdr: 'sh1117.lee@gmail.com',
+      mapLink: 'View Map',
     }
   },
   mounted(){
