@@ -29,9 +29,9 @@
                 <div class="work-list-wrap">
                   
                   <ul class="work-list" ref="refreshList">
-                    <li class="work-list-item" v-for="(work,i) in filterLists" :key="work.id">
+                    <li class="work-list-item" v-for="(work,i) in filterLists" :key="work.dummyData">
                       <div class="card-box" :data-aos="i % 2 === 0 ? 'fade-right' : 'fade-left'" data-offset="300">
-                        <a href="javascript:void(0)" @click="openPopup(work.id)" :data-test="work.id">
+                        <a href="javascript:void(0)" @click="openPopup(work.id)">
                           <div class="card-box-image img-wrap">
                             <img :src="work.src" :alt="`${work.id} 썸네일 이미지`">
                           </div>
@@ -99,7 +99,8 @@ export default {
           tech2: 'Front End Develop', 
           tech3: 'HTML', 
           tech4: 'CSS',
-          tech5: 'JavaScript'
+          tech5: 'JavaScript',
+          dummyData: '1'
         },
         { 
           id: 'kodata',
@@ -109,7 +110,8 @@ export default {
           motit: '한국평가데이터 CRETOP 구축', 
           tech1: 'VUE', 
           tech2: 'CSS', 
-          tech3: 'JavaScript'
+          tech3: 'JavaScript',
+          dummyData: '2'
         },
         { 
           id: 'kbcms',
@@ -121,7 +123,8 @@ export default {
           tech2: 'Front End Develop', 
           tech3: 'HTML', 
           tech4: 'CSS',
-          tech5: 'JavaScript'
+          tech5: 'JavaScript',
+          dummyData: '3'
         },
         { 
           id: 'kbcard',
@@ -132,7 +135,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '4'
         },
         { 
           id: 'kbchachacha',
@@ -144,7 +148,8 @@ export default {
           tech2: 'Front End Develop', 
           tech3: 'HTML', 
           tech4: 'CSS', 
-          tech5: 'JavaScript'
+          tech5: 'JavaScript',
+          dummyData: '5'
         },
         { 
           id: 'hmall',
@@ -155,7 +160,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '6'
         },
         { 
           id: 'renaultkorea',
@@ -166,7 +172,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '7'
         },
         { 
           id: 'happypoint',
@@ -174,7 +181,8 @@ export default {
           src: require('@/assets/img/work/work_08happypoint_thum.png'),
           tit: '해피포인트 <br>웹사이트 리뉴얼', 
           motit: '해피포인트 웹사이트 리뉴얼', 
-          tech1: 'PC & Mobile Design'
+          tech1: 'PC & Mobile Design',
+          dummyData: '8'
         },
         { 
           id: 'lotteskyhill',
@@ -185,7 +193,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '9'
         },
         { 
           id: 'aquaplanet',
@@ -196,7 +205,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '10'
         },
         { 
           id: 'nkglobal',
@@ -208,7 +218,8 @@ export default {
           tech2: 'Front End Develop', 
           tech3: 'HTML', 
           tech4: 'CSS',
-          tech5: 'JavaScript'
+          tech5: 'JavaScript',
+          dummyData: '11'
         },
         { 
           id: 'scbank',
@@ -219,7 +230,8 @@ export default {
           tech1: 'Front End Develop', 
           tech2: 'HTML', 
           tech3: 'CSS', 
-          tech4: 'JavaScript'
+          tech4: 'JavaScript',
+          dummyData: '12'
         }
       ],
     }
@@ -234,11 +246,11 @@ export default {
         return this.workLists.filter(item => item.year === this.yearData).map(item => {
           /**
            * filterChangeYear(year) 에서 재배열하게되도 기존랜더링이 남는 현상
-           * :key="work.id" 의 고유키값을 변동을 줘서 새로랜더링되게끔 map 사용
+           * :key="work.dummyData" 의 고유키값을 변동을 줘서 새로랜더링되게끔 map 사용
            */
           const newItem = {
             ...item,
-            id: item.id + '_' + item.year
+            dummyData: item.dummyData + '_' + item.id
           }
           return newItem
         })

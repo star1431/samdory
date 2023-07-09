@@ -8,8 +8,8 @@ const routes = [
   //1depth
   {path: '/', name: 'Main',component: () => import( '@/views/pages/Main.vue')},
   {path: '/about',name: 'About',component: () => import( '@/views/pages/About.vue')},
-  {path: '/Work',name: 'Work',component: () => import( '@/views/pages/Work.vue')},
-  {path: '/Contact',name: 'Contact',component: () => import( '@/views/pages/Contact.vue')},
+  {path: '/work',name: 'Work',component: () => import( '@/views/pages/Work.vue')},
+  {path: '/contact',name: 'Contact',component: () => import( '@/views/pages/Contact.vue')},
 
 ]
 
