@@ -2,8 +2,7 @@
 <div align="center">
 
   # samdory (build ✔️)
-  
-  **[사이트 이동](https://star1431.github.io/samdory)**
+  **[https://star1431.github.io/samdory](https://star1431.github.io/samdory)**
   
 </div>
 
